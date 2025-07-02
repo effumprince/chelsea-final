@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Beauty Glam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Beauty Glam</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">2</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Checkout</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span>
+                </div>
+            </div>
+            
+            <div class="checkout-container">
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-title">Shipping</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-title">Payment</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-title">Review</span>
+                    </div>
+                </div>
+                
+                <div class="checkout-content">
+                    <div class="checkout-form">
+                        <h2>Shipping Information</h2>
+                        <form id="shipping-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name*</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name*</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number*</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Street Address*</label>
+                                <input type="text" id="address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address2">Apartment, Suite, etc. (Optional)</label>
+                                <input type="text" id="address2">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="country">Country*</label>
+                                    <select id="country" required>
+                                        <option value="">Select Country</option>
+                                        <option value="US" selected>United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <!-- More countries would be added here -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province*</label>
+                                    <select id="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="AL">Alabama</option>
+                                        <!-- All other US states would be listed here -->
+                                        <option value="NY" selected>New York</option>
+                                        <!-- And so on for all states/provinces -->
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City*</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP/Postal Code*</label>
+                                    <input type="text" id="zip" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group shipping-method">
+                                <h3>Shipping Method</h3>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="shipping" checked>
+                                        <span class="radio-label">Standard Shipping (3-5 business days) - $5.99</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="shipping">
+                                        <span class="radio-label">Express Shipping (1-2 business days) - $12.99</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" id="save-info">
+                                    <span>Save this information for next time</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <a href="cart.html" class="btn btn-back">Back to Cart</a>
+                                <button type="submit" class="btn btn-continue">Continue to Payment</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-items">
+                            <div class="summary-item">
+                                <div class="item-image">
+                                    <img src="images/product1-thumb1.jpg" alt="Hydrating Facial Moisturizer">
+                                </div>
+                                <div class="item-details">
+                                    <h4>Hydrating Facial Moisturizer</h4>
+                                    <div class="item-meta">Size: 50ml</div>
+                                    <div class="item-price">$24.99</div>
+                                </div>
+                                <div class="item-quantity">x1</div>
+                            </div>
+                            
+                            <div class="summary-item">
+                                <div class="item-image">
+                                    <img src="images/product2-thumb1.jpg" alt="Matte Lipstick">
+                                </div>
+                                <div class="item-details">
+                                    <h4>Matte Lipstick - Ruby Red</h4>
+                                    <div class="item-meta">Shade: Ruby Red</div>
+                                    <div class="item-price">$16.99</div>
+                                </div>
+                                <div class="item-quantity">x2</div>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>$58.97</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Shipping</span>
+                                <span>$5.99</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Tax</span>
+                                <span>$4.13</span>
+                            </div>
+                            <div class="total-row grand-total">
+                                <span>Total</span>
+                                <span>$69.09</span>
+                            </div>
+                        </div>
+                        
+                        <div class="coupon">
+                            <h3>Have a Coupon?</h3>
+                            <div class="coupon-input">
+                                <input type="text" placeholder="Enter coupon code">
+                                <button class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Beauty Glam</h3>
+                    <p>Your one-stop shop for premium beauty products that enhance your natural beauty.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Beauty Glam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Beauty Glam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Beauty Glam</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Shopping Cart</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Cart</span>
+                </div>
+            </div>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="header-item product">Product</div>
+                        <div class="header-item price">Price</div>
+                        <div class="header-item quantity">Quantity</div>
+                        <div class="header-item total">Total</div>
+                        <div class="header-item remove">Remove</div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="/images/55ba2c1b3869765cc46c7047862488ed.jpg" alt="Hydrating Facial Moisturizer">
+                            <div class="product-info">
+                                <h4>Hydrating Facial Moisturizer</h4>
+                                <div class="product-options">
+                                    <span>Size: 50ml</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">$24.99</div>
+                        <div class="cart-item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <div class="cart-item-total">$24.99</div>
+                        <div class="cart-item-remove">
+                            <button class="remove-btn"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="/images/63e4811bc622783df8f00b71993191b6.jpg" alt="Matte Lipstick">
+                            <div class="product-info">
+                                <h4>Matte Lipstick - Ruby Red</h4>
+                                <div class="product-options">
+                                    <span>Shade: Ruby Red</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">$16.99</div>
+                        <div class="cart-item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="2" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <div class="cart-item-total">$33.98</div>
+                        <div class="cart-item-remove">
+                            <button class="remove-btn"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <button class="btn continue-shopping"><i class="fas fa-arrow-left"></i> Continue Shopping</button>
+                        <button class="btn update-cart">Update Cart</button>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$58.97</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>$5.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>$4.13</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$69.09</span>
+                    </div>
+                    
+                    <div class="coupon">
+                        <h4>Apply Coupon</h4>
+                        <div class="coupon-input">
+                            <input type="text" placeholder="Enter coupon code">
+                            <button class="btn">Apply</button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn checkout-btn">Proceed to Checkout</button>
+                    
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Checkout</span>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <img src="images/VISA-logo-square.png" alt="Visa">
+                        <img src="images/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard">
+                        <img src="images/images (1).png" alt="American Express">
+                        <img src="images/068BjcjwBw0snwHIq0KNo5m-15.webp" alt="PayPal">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cross-sell">
+                <h3>Frequently Bought Together</h3>
+                <div class="product-grid">
+                    <!-- Cross-sell products will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Beauty Glam</h3>
+                    <p>Your one-stop shop for premium beauty products that enhance your natural beauty.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Beauty Glam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

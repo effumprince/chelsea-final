@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - Beauty Glam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Beauty Glam</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>Product Name</span>
+            </div>
+            
+            <div class="product-detail-grid">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="images/product1.jpg" alt="Product Name" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/product1-thumb1.jpg" alt="Product Thumbnail">
+                        <img src="images/product1-thumb2.jpg" alt="Product Thumbnail">
+                        <img src="images/product1-thumb3.jpg" alt="Product Thumbnail">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1>Hydrating Facial Moisturizer</h1>
+                    <div class="product-meta">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42 reviews)</span>
+                        </div>
+                        <div class="sku">SKU: BG-SK001</div>
+                        <div class="availability">In Stock</div>
+                    </div>
+                    
+                    <div class="price">$24.99</div>
+                    
+                    <div class="product-description">
+                        <p>Our hydrating facial moisturizer is formulated with hyaluronic acid and natural botanical extracts to provide deep hydration while leaving your skin feeling soft and supple. Perfect for all skin types, including sensitive skin.</p>
+                        <ul>
+                            <li>Dermatologist tested</li>
+                            <li>Paraben-free</li>
+                            <li>Cruelty-free</li>
+                            <li>Vegan formula</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option">
+                            <label for="size">Size:</label>
+                            <select id="size">
+                                <option value="50ml">50ml</option>
+                                <option value="100ml">100ml (+$10.00)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="add-to-cart">
+                        <div class="quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="#" class="wishlist"><i class="far fa-heart"></i> Add to Wishlist</a>
+                        <a href="#" class="compare"><i class="fas fa-exchange-alt"></i> Compare</a>
+                    </div>
+                    
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                </div>
+                
+                <div class="tab-content active" id="description">
+                    <h3>Product Description</h3>
+                    <p>Our Hydrating Facial Moisturizer is a luxurious daily moisturizer that provides intense hydration while improving skin elasticity and texture. Formulated with hyaluronic acid, aloe vera, and vitamin E, this moisturizer helps to lock in moisture and protect your skin from environmental stressors.</p>
+                    <p>Perfect for morning and night use, this lightweight formula absorbs quickly without leaving a greasy residue. Suitable for all skin types, including sensitive skin.</p>
+                </div>
+                
+                <div class="tab-content" id="ingredients">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li><strong>Hyaluronic Acid:</strong> Attracts and retains moisture in the skin</li>
+                        <li><strong>Aloe Vera:</strong> Soothes and calms the skin</li>
+                        <li><strong>Vitamin E:</strong> Provides antioxidant protection</li>
+                        <li><strong>Jojoba Oil:</strong> Mimics the skin's natural oils for balanced hydration</li>
+                        <li><strong>Green Tea Extract:</strong> Provides antioxidant and anti-inflammatory benefits</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-form">
+                        <h4>Write a Review</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="review-name">Name</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-email">Email</label>
+                                <input type="email" id="review-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title">Review Title</label>
+                                <input type="text" id="review-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Your Review</label>
+                                <textarea id="review-text" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Review</button>
+                        </form>
+                    </div>
+                    
+                    <div class="review-list">
+                        <div class="review-item">
+                            <div class="review-meta">
+                                <div class="review-author">Sarah J.</div>
+                                <div class="review-date">October 15, 2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <h4 class="review-title">Love this moisturizer!</h4>
+                            <p class="review-text">This moisturizer has completely transformed my dry skin. It absorbs quickly and doesn't leave any greasy residue. My skin feels hydrated all day long. Will definitely repurchase!</p>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-meta">
+                                <div class="review-author">Michaela T.</div>
+                                <div class="review-date">September 28, 2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <h4 class="review-title">Great for sensitive skin</h4>
+                            <p class="review-text">I have very sensitive skin and most moisturizers cause irritation. This one is gentle yet effective. The only reason I didn't give 5 stars is because I wish it came in a larger size.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <p>We offer standard and express shipping options. Standard shipping typically takes 3-5 business days, while express shipping takes 1-2 business days. Shipping costs are calculated at checkout based on your location and order size.</p>
+                    
+                    <h3>Returns Policy</h3>
+                    <p>We want you to be completely satisfied with your purchase. If for any reason you're not happy with your product, you may return it within 30 days of receipt for a full refund or exchange. Products must be unopened and in their original packaging.</p>
+                </div>
+            </div>
+            
+            <div class="related-products">
+                <h3>You May Also Like</h3>
+                <div class="product-grid">
+                    <!-- Related products will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer (same as index.html) -->
+    <footer> cv                                                                                                                                                                                                                                       
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Beauty Glam</h3>
+                    <p>Your one-stop shop for premium beauty products that enhance your natural beauty.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Beauty Glam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
